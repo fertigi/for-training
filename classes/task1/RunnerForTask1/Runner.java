@@ -14,16 +14,16 @@ public class Runner {
         trips[4].setTransExpenses(1000);
 
         for (BusinessTrip trip : trips){
-            if (trip instanceof BusinessTrip)
+            if (trip != null)
             trip.show();
         }
 
         trips[4].setTransExpenses(2000);
 
-        
+        System.out.println("Duration = " + (trips[0].getCountDay() + trips[2].getCountDay()));
 
         for (BusinessTrip trip : trips){
-            if (trip instanceof BusinessTrip)
+            if (trip != null)
                 System.out.println(trip);
         }
     }
