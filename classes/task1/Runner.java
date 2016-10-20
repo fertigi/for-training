@@ -18,12 +18,11 @@ public class Runner {
 
         trips[4].setTransExpenses(2000);
 
-
+        
 
         for (BusinessTrip trip : trips){
             if (trip instanceof BusinessTrip)
                 System.out.println(trip);
         }
-
     }
 }
